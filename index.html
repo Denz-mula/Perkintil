@@ -1,135 +1,163 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toko Produk Digital</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran - Nama Shop Lu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://filecatbox.sjsjsk.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background-color: rgba(30, 30, 30, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    section {
+      max-width: 500px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .payment-box {
+      margin-bottom: 20px;
+    }
+
+    .payment-box h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .nomor {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .salin-btn {
+      padding: 6px 12px;
+      background-color: #1e1e1e;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .salin-btn:hover {
+      background-color: #333;
+    }
+
+    .qris-box {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .qris-box img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .btn-wa {
+      display: block;
+      width: 100%;
+      background-color: #25D366;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 <body>
-     
-  <!-- Gambar sebelum judul -->
-  <div class="header-banner">
-    <img src="logo-toko.jpg" alt="Logo Toko" class="logo">
-  </div>
-    <!-- Produk dimulai di sini -->
-</body>
+  <header>
+    <h1>Pembayaran Nama Shop Lu</h1>
+  </header>
 
-  <h1 class="judul">Toko Always Hanzz</h1>
-  <div class="container">
-    
-    <!-- Produk 1 -->
-    <div class="product-card">
-      <img src="pterodactyl.jpg" alt="Panel Pterodactyl" class="product-image">
-      <h2>Panel Pterodactyl</h2>
-      <p class="desc">Server anti intip , script aman 100%</p>
-      <p class="price"><del></del> Rp 1.000–13.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+beli+panel+pterodactyl" class="whatsapp-button">📱 Beli di WhatsApp</a>
-    </div>
+  <section>
+    <h2>Metode Pembayaran</h2>
 
-    <!-- Produk 2 -->
-    <div class="product-card">
-      <img src="sewa.jpg" alt="Sewa Bot Wa" class="product-image">
-      <h2>Sewa Bot Wa</h2>
-      <p class="desc">GARANSI 1X CLAIM KENON?AMBIL GARANSI</p>
-      <p class="price"><del></del> Rp2.000—20.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+sewa+bot" class="whatsapp-button">📱 Beli di WhatsApp</a>
+    <div class="payment-box">
+      <h3>Gopay</h3>
+      <div class="nomor">
+        <span id="gopay">087263626233</span>
+        <button class="salin-btn" onclick="salin('gopay')">Salin No</button>
       </div>
-
-    <!-- Produk 3 -->
-    <div class="product-card">
-      <img src="orkut.jpg" alt="Produk Orkut" class="product-image">
-      <h2>Murid Up Orkut</h2>
-      <p class="desc">Benefit Murid Up Orkut Via Gallery?Chat Owner</p>
-      <p class="price">Rp 10.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+join+murid+up+orkut+via+gallery" class="whatsapp-button">📱 Beli di WhatsApp</a>
     </div>
 
-    <!-- Produk 4 -->
-    <div class="product-card">
-      <img src="group.jpg" alt="Reseller Panel" class="product-image">
-      <h2>Reseller Panel</h2>
-      <p class="desc">Server Private , Spek Vps r16 c4 , dll chat owner aja</p>
-      <p class="price">Rp 5.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+join+reseller+panel" class="whatsapp-button">📱 Beli di WhatsApp</a>
+    <div class="payment-box">
+      <h3>OVO</h3>
+      <div class="nomor">
+        <span id="ovo">087263626233</span>
+        <button class="salin-btn" onclick="salin('ovo')">Salin No</button>
+      </div>
+    </div>
+    
+        <div class="payment-box">
+      <h3>DANA</h3>
+      <div class="nomor">
+        <span id="dana">087263626233</span>
+        <button class="salin-btn" onclick="salin('ovo')">Salin No</button>
+      </div>
     </div>
 
-    <!-- Produk 5 -->
-    <div class="product-card">
-      <img src="grup.jpg" alt="adminpanel" class="product-image">
-      <h2>Admin Panel</h2>
-      <p class="desc">Benefit Admin Panel?chat owner</p>
-      <p class="price">Rp 10.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+join+admin+panel" class="whatsapp-button">📱 Beli di WhatsApp</a>
+    <div class="qris-box">
+      <h3>Scan QRIS - Tekan Tombol Lihat</h3>
+      <a href="qris.jpg" target="_blank">
+        <button class="salin-btn">Lihat</button>
+      </a>
     </div>
 
-    <!-- Produk 6 -->
-    <div class="product-card">
-      <img src="scbotwa.jpg" alt="JualScBot" class="product-image">
-      <h2>Script Bot</h2>
-      <p class="desc">Untuk Script Bot Hanya Ada 3 Varian 1. Sc Simpel Menu V4 2. Sc Pushkontak Simpel V1 3. Sc Cpanel Via Tele V8 All Sudah No Enc</p>
-      <p class="price">Rp 10.000 — 30.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+beli+script+bot" class="whatsapp-button">📱 Beli di WhatsApp</a>
-    </div>
+    <a href="https://wa.me/6281234567890" class="btn-wa" target="_blank">Konfirmasi via WhatsApp</a>
 
-    <!-- Produk 7 -->
-    <div class="product-card">
-      <img src="nokos.jpg" alt="Nokos" class="product-image">
-      <h2>Nokos Indo/Nokos Luar</h2>
-      <p class="desc">Ready Stok Nokos Indo/Luar</p>
-      <p class="price">Rp 7.000 — 35.000 </p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+beli+nokos+indo+/nokos+luar" class="whatsapp-button">📱 Beli di WhatsApp</a>
+    <div style="text-align:center; margin-top: 20px;">
+      <p>Ikuti Channel WhatsApp Kami:</p>
+      <a href="https://whatsapp.com/channel/0029VaEZyJ4JGi6KTHQ6Uv1R" target="_blank" class="salin-btn" style="background-color:#25D366;">Channel WA</a>
     </div>
+  </section>
 
-    <!-- Produk 8 -->
-    <div class="product-card">
-      <img src="scbotreq.jpg" alt="JasaPembuatanScBot" class="product-image">
-      <h2>Jasa Pembuatan Script Bot</h2>
-      <p class="desc">Note Ini Cuma Only Cpanel , Pushkontak , md</p>
-      <p class="price">Rp 20.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+jasa+pembuatan+script+bot" class="whatsapp-button">📱 Beli di WhatsApp</a>
-    </div>
+  <footer>
+    <p>&copy; 2025 Nama Lu</p>
+  </footer>
 
-    <!-- Produk 9 -->
-    <div class="product-card">
-      <img src="ress.jpg" alt="Produk9" class="product-image">
-      <h2>Team Ress Dan Admin Team Ress</h2>
-      <p class="desc">Benefit?sung chat owner saja</p>
-      <p class="price">Rp 10.000 — 20.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+join+team+ress+/admin+team+ress" class="whatsapp-button">📱 Beli di WhatsApp</a>
-    </div>
-
-    <!-- Produk 10 -->
-    <div class="product-card">
-      <img src="indopride.jpg" alt="Marga Indopride" class="product-image">
-      <h2>Marga Indopride</h2>
-      <p class="desc">Benefit?Chat Owner Saja Soalnya Kebanyakan Bisa Dp Asal Lunas</p>
-      <p class="price">Rp 70.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+join+marga+indopride" class="whatsapp-button">📱 Beli di WhatsApp</a>
-    </div>
-
-    <!-- Produk 11 -->
-    <div class="product-card">
-      <img src="scsimpel.jpg" alt="Reseller Sc Simpel Menu V4" class="product-image">
-      <h2>Reseller Sc Simpel Menu V4</h2>
-      <p class="desc">Bisa Jual Script Nya Asal Jangan Di Bagikan secara free ngeyel?kick</p>
-      <p class="price">Rp 80.000</p>
-      <a href="https://wa.me/6281936513894?text=Halo%2C+saya+mau+join+reseller+sc+simpel+menu" class="whatsapp-button">📱 Beli di WhatsApp</a>
-    </div>
-       <!-- Gambar Metode Pembayaran -->
-<div class="pembayaran">
-  <h3>Metode Pembayaran</h3>
-  <img src="dana.png" alt="Pembayaran DANA" class="metode">
-  <img src="qris.png" alt="Pembayaran QRIS" class="metode">
-</div>
-<!-- Tombol Channel WhatsApp -->
-<div class="channel-wa">
-  <a href="https://whatsapp.com/channel/0029Vb5ahlD2v1ImfMMaMr00" target="_blank" class="btn-wa-channel">
-    🔔 Gabung Channel WhatsApp
-  </a>
-</div>
-
-  </div>
+  <script>
+    function salin(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Nomor berhasil disalin!");
+      });
+    }
+  </script>
 </body>
-</html>
-
+      </html>
